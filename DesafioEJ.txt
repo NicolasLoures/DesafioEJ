@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 70%;
+            padding: 10px;
+            margin: 25px 0;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        .login-button {
+      		margin-top: 20px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            width: 50%;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #cc0000;
+        }
+
+        .login-links {
+            margin-top: 35px;
+            font-size: 14px;
+        }
+
+        .login-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .login-links a:hover {
+            text-decoration: underline;
+        }
+		label{
+      		
+      		color: #fff;
+      		display: block
+    		margin: 1px;
+      }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+
+        <form>
+			<br>
+          	<label for="usuario">USER</label>
+			<br>
+          
+            <input type="text" id= "usuario">
+            <br><label for="senha">PASSWORD</label><br>
+            <input type="password" id = "senha">
+
+            <button class="login-button">Login</button>
+        </form>
+        <div class="login-links">
+            <a href="#">Reset password</a><br>
+            <a href="#">Create One</a>
+        </div>
+    </div>
+</body>
+</html>
